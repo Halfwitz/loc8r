@@ -1,16 +1,16 @@
 /* GET home page */
 const homeList = (req, res) => {
-    res.render('index', { title: 'Home' });
+    res.render('locations-list', { title: 'Loc8r - Home' });
 };
 
 /* GET 'Location Info' page */
 const locationInfo = (req, res) => {
-    res.render('index', { title: 'Location Info' });
+    res.render('location-info', { title: 'Location Info' });
 };
 
 /* GET 'Add Review' page */
 const addReview = (req, res) => {
-    res.render('index', { title: 'Add Review' });
+    res.render('location-review-form', { title: 'Add Review' });
 };
 
 module.exports = {

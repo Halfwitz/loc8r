@@ -7,15 +7,15 @@ html
     link(rel='stylesheet', href='/stylesheets/all.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    nav.navbar.fixed-top.navbar-expand-md.navbar-light <!-- Bootstrap nav bar fixed to top of window -->
-      .container 
+    nav(class="navbar navbar-expand-md navbar-light fixed-top") <!-- Bootstrap nav bar fixed to top of window -->
+      .container
         a.navbar-brand(href='/') Loc8r <!-- adds brand-styled link to homepage -->
-          button.navbar-toggler(type='button',date-toggle='collapse',data-target='#navbarMain') <!--sets up collapsing navigation for smaller screens-->
-            span.navbar-toggler-icon 
-          #navbarMain.navbar-collapse.collapse 
-        ul.navbar-nav.mr-auto  <!--navigation links-->
-          li.nav-item 
-            a.nav-link(href='/about/') About
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarMain' aria-controls='navbarMain' aria-expanded='false' aria-label='Toggle navigation') <!--sets up collapsing navigation for smaller screens-->
+          span.navbar-toggler-icon 
+        #navbarMain.navbar-collapse.collapse 
+          ul.navbar-nav.mr-auto  <!--navigation links-->
+            li.nav-item 
+              a.nav-link(href='/about/') About
 
     .container
       block content
